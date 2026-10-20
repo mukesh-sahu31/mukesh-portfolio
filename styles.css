@@ -487,15 +487,14 @@ img {
 }
 
 .contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   max-width: 440px;
 }
 
 .copy-status {
-  width: 100%;
+  grid-column: 1 / -1;
   min-height: 1.4em;
   color: var(--muted);
   font-size: 0.84rem;

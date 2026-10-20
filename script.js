@@ -16,6 +16,10 @@ if (copyEmailButton && emailCopyStatus) {
     let copied = false;
 
     try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error('Clipboard API unavailable');
+      }
+
       await navigator.clipboard.writeText(email);
       copied = true;
     } catch {
@@ -24,10 +28,16 @@ if (copyEmailButton && emailCopyStatus) {
       emailField.setAttribute('readonly', '');
       emailField.style.position = 'fixed';
       emailField.style.opacity = '0';
-      document.body.appendChild(emailField);
-      emailField.select();
-      copied = document.execCommand('copy');
-      emailField.remove();
+
+      try {
+        document.body.appendChild(emailField);
+        emailField.select();
+        copied = document.execCommand('copy');
+      } catch {
+        copied = false;
+      } finally {
+        emailField.remove();
+      }
     }
 
     if (copied) {

@@ -182,6 +182,9 @@ img {
 .secondary-btn {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
 }
 
 .primary-btn:hover,
@@ -410,6 +413,27 @@ img {
   text-transform: uppercase;
 }
 
+.impact-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: 14px;
+}
+
+.impact-metrics li {
+  padding: 6px 10px;
+  border-left: 2px solid var(--primary);
+  background: rgba(99, 230, 190, 0.08);
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.impact-metrics strong,
+.project-card li strong {
+  color: var(--primary);
+}
+
 .timeline-content p {
   color: var(--muted);
 }
@@ -438,6 +462,44 @@ img {
   color: var(--primary);
   font-weight: 700;
   margin-right: 10px;
+}
+
+.contact-section {
+  background: linear-gradient(110deg, rgba(18, 184, 134, 0.12), rgba(145, 167, 255, 0.08));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-copy h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact-copy > p:last-child {
+  color: var(--muted);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  max-width: 440px;
+}
+
+.copy-status {
+  width: 100%;
+  min-height: 1.4em;
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-align: right;
 }
 
 .site-footer {
@@ -508,5 +570,18 @@ img {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
+  }
+
+  .copy-status {
+    text-align: left;
   }
 }

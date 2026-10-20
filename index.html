@@ -49,7 +49,8 @@
               APIs and microservices designed to scale.
             </p>
             <div class="hero-actions">
-              <a href="#experience" class="primary-btn">View Experience</a>
+              <a href="Mukesh_Full_Stack_Engineer.pdf" class="primary-btn" download>Download Resume</a>
+              <a href="#experience" class="secondary-btn">View Experience</a>
               <a href="mailto:mukesh.sahu05mar@gmail.com" class="secondary-btn">Contact Me</a>
             </div>
             <ul class="hero-metrics">
@@ -195,11 +196,14 @@
                 <span class="time">Jan 2025 — Oct 2025</span>
                 <h3>R Systems</h3>
                 <p>
-                  <strong>Lead Engineer · Remote</strong> · Led a team of 4+ backend engineers and
-                  designed AWS migration infrastructure with Terraform, ECS, Lambda, and S3. Owned
+                  <strong>Lead Engineer · Remote</strong> · Designed AWS migration infrastructure
+                  with Terraform, ECS, Lambda, and S3. Owned
                   backend services from design to deployment, built scalable REST APIs, and
                   coordinated delivery with product, QA, DevOps, and client teams.
                 </p>
+                <ul class="impact-metrics">
+                  <li><strong>4+</strong> backend engineers led</li>
+                </ul>
               </div>
             </article>
             <article class="timeline-item">
@@ -210,10 +214,13 @@
                 <p>
                   <strong>Senior Software Engineer</strong> · Built production data-ingestion
                   microservices with SNS, Lambda, and DynamoDB; deployed containerized services on
-                  ECS; and introduced Redis caching that reduced API latency by 30%. Improved
-                  observability with Coralogix and PagerDuty, and contributed to Kafka pipelines,
+                  ECS; and introduced Redis caching. Improved observability with Coralogix and
+                  PagerDuty, and contributed to Kafka pipelines,
                   API security, and high-volume React application services.
                 </p>
+                <ul class="impact-metrics">
+                  <li><strong>30%</strong> lower API latency</li>
+                </ul>
               </div>
             </article>
             <article class="timeline-item">
@@ -224,9 +231,12 @@
                 <p>
                   <strong>Software Engineer</strong> · Designed serverless microservices and APIs
                   using Lambda and API Gateway. Integrated IoT Core, DynamoDB, SQS, RDS, and
-                  EventBridge; improved DynamoDB batch-write throughput by 50%; and delivered
-                  backward-compatible schema migrations and secure request handling.
+                  EventBridge; delivered backward-compatible schema migrations and secure request
+                  handling.
                 </p>
+                <ul class="impact-metrics">
+                  <li><strong>50%</strong> higher DynamoDB batch-write throughput</li>
+                </ul>
               </div>
             </article>
             <article class="timeline-item">
@@ -235,11 +245,16 @@
                 <span class="time">Jun 2019 — Jul 2022</span>
                 <h3>wayForward (acquired by DarioHealth)</h3>
                 <p>
-                  <strong>Software Engineer</strong> · Implemented server-side caching that reduced
-                  API calls by 40%, optimized processing of 15,000+ records to under five minutes,
-                  and introduced Lambda-based indexing that improved query performance by 60%.
-                  Achieved 95% code coverage with unit and integration tests.
+                  <strong>Software Engineer</strong> · Implemented server-side caching and
+                  Lambda-based indexing, optimized high-volume data processing, and strengthened
+                  automated unit and integration testing.
                 </p>
+                <ul class="impact-metrics">
+                  <li><strong>40%</strong> fewer API calls</li>
+                  <li><strong>15,000+</strong> records in under 5 minutes</li>
+                  <li><strong>60%</strong> better query performance</li>
+                  <li><strong>95%</strong> code coverage</li>
+                </ul>
               </div>
             </article>
           </div>
@@ -296,7 +311,7 @@
                 retries, idempotent consumers, and dead-letter queues for resilient processing.
               </p>
               <ul>
-                <li>Improved write throughput by 50%</li>
+                <li><strong>50%</strong> higher write throughput</li>
                 <li>Deployed on auto-scaling AWS ECS</li>
               </ul>
             </article>
@@ -309,7 +324,7 @@
               </p>
               <ul>
                 <li>Benchmarked for latency and throughput</li>
-                <li>35% lower response time than equivalent Node.js implementations</li>
+                <li><strong>35%</strong> lower response time than equivalent Node.js implementations</li>
               </ul>
             </article>
             <article class="project-card">
@@ -320,7 +335,7 @@
                 JWT role-based access, dashboards, reporting, and user management.
               </p>
               <ul>
-                <li>Reduced response times by 40% with Redis and indexing</li>
+                <li><strong>40%</strong> faster responses with Redis and indexing</li>
                 <li>Containerized and deployed on AWS ECS</li>
               </ul>
             </article>
@@ -329,7 +344,24 @@
       </section>
     </main>
 
-    <footer id="contact" class="site-footer">
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something dependable.</h2>
+          <p>Recruiter inquiries and thoughtful collaborations are welcome.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:mukesh.sahu05mar@gmail.com" class="primary-btn">Send email</a>
+          <button type="button" id="copy-email-button" class="secondary-btn">Copy email</button>
+          <a href="tel:+918700871285" class="secondary-btn">Call</a>
+          <a href="https://www.linkedin.com/in/mukesh-sahu-311277119/" class="secondary-btn" target="_blank" rel="noreferrer">LinkedIn</a>
+          <p id="email-copy-status" class="copy-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
       <div class="container footer-inner">
         <div>
           <a href="#home" class="brand"><img src="logo.svg" alt="" class="brand-mark" />Mukesh<span>Sahu</span></a>
@@ -338,6 +370,7 @@
         <div class="footer-links">
           <a href="mailto:mukesh.sahu05mar@gmail.com">Email</a>
           <a href="tel:+918700871285">Call</a>
+          <a href="https://www.linkedin.com/in/mukesh-sahu-311277119/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/mukesh86637584" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>

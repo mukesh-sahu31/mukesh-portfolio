@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Local environment
+.env
+
+# Build output
+node_modules/
